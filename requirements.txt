@@ -1,3 +1,3 @@
-fasthtml
+python-fasthtml
 uvicorn[standard]
 python-multipart
