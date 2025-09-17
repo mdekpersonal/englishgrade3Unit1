@@ -482,24 +482,24 @@ vocabulary_data = {
 }
 
 # 📚 EMMA'S SIMPLE STORY - Easy for Grade 3
-emma_monologue = """Hi! I'm Emma! 👋
+emma_monologue = """Hi! I'm Emma! 
 
 I am ten years old. 
 I love my family! 
-I have a mother, father, sister, and brother. 👨‍👩‍👧‍👦
+I have a mother, father, sister, and brother. 
 
 We have pets! 
-A dog and a cat! �🐱
+A dog and a cat! 
 They are so cute!
 
-I can count: ten, eleven, twelve, thirteen! �
-I like to play and read books! �
-I can run and jump! 🏃‍♀️
+I can count: ten, eleven, twelve, thirteen! 
+I like to play and read books! 
+I can run and jump! 
 
 Thank you for learning with me! 
-You are amazing! ⭐
+You are amazing! 
 
-Bye bye! �"""
+Bye bye! """
 
 # Routes for the Optimized App! 🚀
 @app.get("/")
