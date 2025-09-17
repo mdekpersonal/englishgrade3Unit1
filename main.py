@@ -1,9 +1,14 @@
 from fasthtml.common import *
 import uvicorn
+import os
 from typing import Dict, List, Optional
 
 # Initialize FastHTML app with beautiful styling matching the original React version
+# Use environment variable or default secret key for deployment
+secret_key = os.environ.get('SECRET_KEY', 'dev-key-change-in-production-12345678901234567890')
+
 app = FastHTML(
+    secret_key=secret_key,
     hdrs=[
         Link(rel="preconnect", href="https://fonts.googleapis.com"),
         Link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin=True),
