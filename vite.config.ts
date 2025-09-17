@@ -17,14 +17,23 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
+      assetsInclude: [],
+      css: {
+        postcss: {
+          plugins: []
+        }
+      },
       esbuild: {
         logOverride: { 'this-is-undefined-in-esm': 'silent' }
       },
       optimizeDeps: {
-        include: ['react', 'react-dom']
+        include: ['react', 'react-dom'],
+        exclude: ['tailwindcss', 'postcss', 'autoprefixer']
       },
       build: {
+        cssCodeSplit: false,
         rollupOptions: {
+          external: [],
           output: {
             manualChunks: {
               react: ['react', 'react-dom']
