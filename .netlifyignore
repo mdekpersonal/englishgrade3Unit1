@@ -1,4 +1,0 @@
-postcss.config.*
-tailwind.config.*
-*.postcssrc*
-.postcssrc*

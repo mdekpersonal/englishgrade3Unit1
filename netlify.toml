@@ -1,10 +1,6 @@
 [build]
-  command = "DISABLE_ESLINT_PLUGIN=true npm install --only=prod && npm install --only=dev && npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18.17.0"
-  NPM_VERSION = "9.6.7"
-  DISABLE_ESLINT_PLUGIN = "true"
-  SKIP_PREFLIGHT_CHECK = "true"
-  CI = "false"
+  NODE_VERSION = "18"
