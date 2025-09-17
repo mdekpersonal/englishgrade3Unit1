@@ -20,7 +20,15 @@ A beautiful, interactive English vocabulary learning application designed specif
 
 ## 🚀 Quick Start
 
-### Option 1: Simple Python Setup
+### Option 1: Railway (Recommended - Easiest!)
+```bash
+# 1. Go to https://railway.app
+# 2. Connect your GitHub repository
+# 3. Railway auto-detects Python and deploys automatically
+# 4. Your app will be live in minutes!
+```
+
+### Option 2: Local Development
 ```bash
 # 1. Install dependencies
 pip install python-fasthtml uvicorn
@@ -32,7 +40,7 @@ python main_optimized.py
 # Visit: http://localhost:8000
 ```
 
-### Option 2: Virtual Environment (Recommended)
+### Option 3: Virtual Environment (Recommended)
 ```bash
 # 1. Create virtual environment
 python -m venv .venv
@@ -47,7 +55,7 @@ pip install -r requirements.txt
 python main_optimized.py
 ```
 
-### Option 3: Using Docker
+### Option 4: Using Docker
 ```bash
 # Build the image
 docker build -t english-vocab-app .
@@ -55,6 +63,11 @@ docker build -t english-vocab-app .
 # Run the container
 docker run -p 8000:8000 english-vocab-app
 ```
+
+### Option 5: Other Platforms
+- **Render**: Free tier, easy Python deployment
+- **Heroku**: Classic choice for Python apps
+- See `DEPLOYMENT.md` for detailed instructions
 
 ### Option 4: Using the Run Script
 ```bash
@@ -110,9 +123,23 @@ source .venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the optimized version
+# Run the optimized version (recommended for production)
 python main_optimized.py
+
+# Or run the animated monster version
+python main_monster.py
 ```
+
+### ⚠️ Important Note About Deployment
+
+**This app is now built with Python FastHTML and cannot be deployed to Netlify.** Netlify is designed for static sites (HTML/CSS/JS), but FastHTML is a Python web server.
+
+**Use these platforms instead:**
+- ✅ **Railway** (Recommended - easiest!)
+- ✅ **Render** (Free tier available)
+- ✅ **Heroku** (Classic Python hosting)
+
+See `DEPLOYMENT.md` for detailed deployment instructions.
 
 ## 🎨 Customization
 
