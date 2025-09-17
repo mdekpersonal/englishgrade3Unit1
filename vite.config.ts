@@ -14,6 +14,11 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      css: {
+        postcss: {
+          plugins: [] // Empty plugins array to avoid Tailwind PostCSS conflicts
+        }
       }
     };
 });

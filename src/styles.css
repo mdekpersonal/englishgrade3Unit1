@@ -1,0 +1,13 @@
+/* Custom styles to work with Tailwind CDN for production builds */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, .font-fredoka {
+  font-family: 'Fredoka One', cursive;
+}
+
+/* Ensure no PostCSS conflicts */
+.no-tailwind {
+  all: initial;
+}
