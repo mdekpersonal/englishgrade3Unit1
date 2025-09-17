@@ -12,7 +12,13 @@ export default defineConfig(({ mode }) => {
       build: {
         target: 'esnext',
         minify: 'esbuild',
-        sourcemap: false
+        sourcemap: false,
+        cssCodeSplit: false,
+        rollupOptions: {
+          output: {
+            manualChunks: undefined
+          }
+        }
       }
     };
 });
