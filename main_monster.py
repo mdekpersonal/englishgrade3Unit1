@@ -9,6 +9,7 @@ secret_key = os.environ.get('SECRET_KEY', 'dev-key-change-in-production-12345678
 
 app = FastHTML(
     secret_key=secret_key,
+    key_fname=None,  # Disable file-based key storage for deployment
     hdrs=[
         Link(rel="preconnect", href="https://fonts.googleapis.com"),
         Link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin=True),
