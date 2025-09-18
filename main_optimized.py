@@ -526,8 +526,10 @@ def home():
     return Div(
         # 🎪 Header
         Div(
+            H3("EXCELLENCE JUNIOR SCHOOL", style="text-align: center; color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 1px;"),
             H1("🌟 VOCABULARY FUN 🌟", cls="title"),
             H2("Grade 3 English Adventure!", cls="subtitle"),
+            H3("UNIT 1", style="text-align: center; color: #FFD700; font-size: 1.4rem; margin-top: 0.5rem; margin-bottom: 1rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);"),
             P("Learn new words with fun activities! 🎉", style="font-size: 1.1rem; color: rgba(255,255,255,0.9);"),
             cls="header"
         ),
