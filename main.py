@@ -1,4 +1,7 @@
-from fasthtml.common import *
+from fasthtml.common import (
+    FastHTML, Link, Style, Html, Head, Title, Meta, Body,
+    Div, Header, Main, A, Span, P, H1, H2, H3, H4, Button, Script, RedirectResponse
+)
 import uvicorn
 import os
 from typing import Dict, List, Optional
